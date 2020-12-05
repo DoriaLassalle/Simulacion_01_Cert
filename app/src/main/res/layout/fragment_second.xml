@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgSelected"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/img_selected" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <TextView
+            android:id="@+id/nameSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp"
+            tools:text="nombre" />
+
+        <TextView
+            android:id="@+id/priceSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primary_text"
+            android:textSize="22sp"
+            tools:text="precio" />
+
+        <TextView
+            android:id="@+id/lastPriceSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp"
+            tools:text="lastprice" />
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/content_scrolling" />
+
+        <Button
+            android:id="@+id/button_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/previous" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
